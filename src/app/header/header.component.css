@@ -1,0 +1,36 @@
+.navigation {
+    display: flex;
+    flex-direction: row;
+    background: rgb(145, 193, 240); 
+    padding: 2em;
+    justify-content: center;
+    padding: 2vw;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+} 
+
+.navigation a {
+    align-self: center;
+    color: black;
+    text-decoration: none;
+    margin-left: 3vw;
+    margin-right: 3vw;
+    font-size: 2vw;
+    text-align: center;
+}
+
+.navigation a:hover {
+    background-color: lightgray;
+}
+
+.title a{
+   font-size: 3vw;
+}
+
+
+    /* 
+    - make the nav buttons wrap around title for 
+      small screens 
+    - make styles for min (and medium?) size screens
+    - bring all the way to the top
+    */
