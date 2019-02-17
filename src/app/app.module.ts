@@ -5,8 +5,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { PrincetonComponent } from './princeton/prinection.component';
-// import { BlackstoneComponent } from './blackstone/blackstone.component';
-// import { HomesComponent } from './homes/homes.component';
+import { BlackstoneComponent } from './blackstone/blackstone.component';
+import { HomesComponent } from './homes/homes.component';
 import { ContactComponent } from './contact/contact.component';
 import { MainComponent } from './main/main.component';
 import { MaintenanceComponent } from './maintenance/maintenance.component';
@@ -29,8 +29,8 @@ import { ParallaxModule, ParallaxConfig } from 'ngx-parallax';
     AppComponent,
     HeaderComponent,
     PrincetonComponent,
-    // BlackstoneComponent,
-    // HomesComponent,
+    BlackstoneComponent,
+    HomesComponent,
     ContactComponent,
     MainComponent,
     MaintenanceComponent,

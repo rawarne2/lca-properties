@@ -16,8 +16,8 @@ export class MaintenanceComponent implements OnInit {
   constructor() {
     this.properties = [
       { label: 'Select Property', value: null },
-      { label: 'Rental Homes', value: { id: 1, name: 'Rental Homes' }},
-      { label: 'Blacstone', value: { id: 1, name: 'Blacstone' }},
+      // { label: 'Rental Homes', value: { id: 1, name: 'Rental Homes' }},
+      // { label: 'Blacstone', value: { id: 1, name: 'Blacstone' }},
       { label: 'Princeton', value: { id: 1, name: 'Princeton' }},
     ]
   }
