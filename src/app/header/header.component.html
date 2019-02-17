@@ -1,8 +1,8 @@
-<nav class="navigation">
-  <div class="title"><a routerLink="/">{{ title }}</a></div>
-  <a routerLink="/homes">Rental Homes</a>
-  <a routerLink="/princeton">Princeton</a>
-  <a routerLink="/blackstone">Blackstone</a>
-  <a routerLink="/maintenance">Maintenance</a>
-  <a routerLink="/contacts">Contact Us</a>
-</nav>
+<div  class="navigation">
+  <a routerLink="/">
+    <img src="../../assets/images/LCA Logo-1.jpeg" alt="logo" height="100" width="400" class="lca-logo"/>
+  </a>
+  <p-tabMenu [model]="items" styleClass="navItem"></p-tabMenu>
+</div>
+
+<!-- fix header to the top -->

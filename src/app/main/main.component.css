@@ -1,5 +1,38 @@
-.content-body {
-    margin: 5vw;
-    padding: 5vw;
-    background-color: white;
+body, html {
+    height: 100%;
 }
+  
+.parallax1 {
+
+    background-image: 
+        url("../../assets/images/chicago-skyline.jpeg");
+    
+    /* Full height */
+    height: 75vh; 
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.parallax2 {
+
+    background-image: url("../../assets/images/princeton/princeton-google-maps-view.jpeg");
+    
+    /* Full height */
+    height: 75vh; 
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Turn off parallax scrolling for all tablets and phones. Increase/decrease the pixels if needed */
+@media only screen and (max-device-width: 1366px) {
+    .parallax {
+      background-attachment: scroll;
+    }
+  }

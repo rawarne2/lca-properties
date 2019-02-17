@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { PrinectionComponent } from './prinection.component';
+import { Princeton } from './princeton.component';
 
-describe('PrinectionComponent', () => {
-  let component: PrinectionComponent;
-  let fixture: ComponentFixture<PrinectionComponent>;
+describe('Princeton', () => {
+  let component: Princeton;
+  let fixture: ComponentFixture<Princeton>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ PrinectionComponent ]
+      declarations: [ Princeton ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(PrinectionComponent);
+    fixture = TestBed.createComponent(Princeton);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

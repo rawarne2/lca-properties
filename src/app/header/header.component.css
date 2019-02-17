@@ -1,33 +1,22 @@
 .navigation {
-    display: flex;
-    flex-direction: row;
-    background: rgb(145, 193, 240); 
-    padding: 2em;
-    justify-content: center;
-    padding: 2vw;
-    border-bottom-left-radius: 15px;
-    border-bottom-right-radius: 15px;
-} 
-
-.navigation a {
-    align-self: center;
-    color: black;
-    text-decoration: none;
-    margin-left: 3vw;
-    margin-right: 3vw;
-    font-size: 2vw;
-    text-align: center;
+   display: flex;
+   flex-direction: row;
+   padding: 25px;
+   justify-content: space-around;
+   background-color: rgb(65, 65, 107);
 }
 
-.navigation a:hover {
-    background-color: lightgray;
+body .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem {
+    margin: 1vw;
+    /* get rid of underline, make stretch */
 }
 
-.title a{
-   font-size: 3vw;
+.lca-logo {
+    /* border: 5px, solid, black; */
+    border-color: black;
+    border-width: 2px;
+    border-style: solid;
 }
-
-
     /* 
     - make the nav buttons wrap around title for 
       small screens 

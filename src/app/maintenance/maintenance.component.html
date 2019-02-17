@@ -1,5 +1,40 @@
-<form>
-  <title></title>
-</form>
+<p-card>
+<p-header>Mainenance Request</p-header>
+<h3>Please fill out the form below to submit a maintenance 
+    request and we will try to respond to your issue within 48 hours.
+</h3>
+<p-card styleClass="form">
+    <p-dropdown
+        [options]="properties"
+        [(ngModel)]="selectedProperty"
+        (onChange)="submitProperty($event.value.name)">
+    </p-dropdown>
+    <input type="text" pInputText placeholder="First Name" (onBlur)="submitProperty()"/>
+    <input type="text" pInputText placeholder="Last Name"/>
+    <input type="text" pInputText placeholder="Phone Number"/>
+    <input type="text" pInputText placeholder="Alternate Phone Number"/>
+    <input type="text" pInputText placeholder="Email Address"/>
+    <input type="text" pInputText placeholder="Confirm Email Address"/>
+    <input type="text" pInputText placeholder="Apartment Number"/>
 
-<!-- angular mateiral ui? -->
+</p-card>
+</p-card>
+
+
+<!-- 
+  location
+  - building * (dropdown)
+  - apt number
+  - description (textinput) * min 5 words
+
+  contact
+  first name *
+  last name *
+  phone number * (radio button for mobile or home)
+      -allow texts checkbox?
+  alternate phone number 
+  email address *
+  verify email address
+    font sizes em
+
+-->

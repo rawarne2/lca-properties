@@ -1,0 +1,22 @@
+.form .ui-card-body {
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    background: lightgray;
+}
+
+.form .ui-widget-header .ui-inputtext, .ui-widget-content .ui-inputtext  {
+    width: 80%;
+    margin: .1vw 2vw;
+    /* width: 100%; */
+}
+
+/* .form .ui-inputtext {
+    margin: .1vw 2vw;
+    color: red;
+} */
+
+.form .ui-card-content :first-child {
+    /* width: 60%; */
+    /* margin: .1vw 1vw; */
+}
