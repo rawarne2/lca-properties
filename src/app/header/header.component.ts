@@ -11,7 +11,7 @@ import { MenuItem } from 'primeng/api';
 export class HeaderComponent implements OnInit {
 
   title = 'LCA Apartments';
-  private items: MenuItem[];
+  public items: MenuItem[];
 
   constructor() { }
 

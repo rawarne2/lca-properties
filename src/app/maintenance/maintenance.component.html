@@ -4,19 +4,19 @@
     request and we will try to respond to your issue within 48 hours.
 </h3>
 <p-card styleClass="form">
-    <p-dropdown
+    <!-- <p-dropdown
         [options]="properties"
         [(ngModel)]="selectedProperty"
         (onChange)="submitProperty($event.value.name)">
-    </p-dropdown>
-    <input type="text" pInputText placeholder="First Name" (onBlur)="submitProperty()"/>
-    <input type="text" pInputText placeholder="Last Name"/>
-    <input type="text" pInputText placeholder="Phone Number"/>
-    <input type="text" pInputText placeholder="Alternate Phone Number"/>
-    <input type="text" pInputText placeholder="Email Address"/>
-    <input type="text" pInputText placeholder="Confirm Email Address"/>
-    <input type="text" pInputText placeholder="Apartment Number"/>
-
+    </p-dropdown> -->
+    <input #firstName type="text" pInputText placeholder="First Name" (blur)="submitProperty(firstName.value)"/>
+    <input #lastNAme type="text" pInputText placeholder="Last Name"/>
+    <input #phoneNumner type="text" pInputText placeholder="Phone Number"/>
+    <input #altphoneNumner type="text" pInputText placeholder="Alternate Phone Number"/>
+    <input #emailAdress type="text" pInputText placeholder="Email Address"/>
+    <input #confirmEmail type="text" pInputText placeholder="Confirm Email Address"/>
+    <input #aptNumber type="text" pInputText placeholder="Apartment Number"/>
+    <!-- <button>submit</button> make it submit the entire form -->
 </p-card>
 </p-card>
 
@@ -36,5 +36,5 @@
   email address *
   verify email address
     font sizes em
-
+change submitProperty to validateField and validate the field
 -->
