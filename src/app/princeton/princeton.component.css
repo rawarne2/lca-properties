@@ -3,3 +3,13 @@
     padding: 5vw;
     background-color: white;
 }
+
+.features {
+    text-align: center;
+    padding: 5vh 0vw;
+    margin: 0vh 5vw;
+    border-bottom: 1.5px lightgray solid;
+}
+
+
+/* fix overlay of header */

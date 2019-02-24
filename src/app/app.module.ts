@@ -16,6 +16,7 @@ import { MenuItem } from 'primeng/api';
 import { CardModule } from 'primeng/card';
 import { DropdownModule } from 'primeng/dropdown';
 import { InputTextModule } from 'primeng/inputtext';
+import { InputTextareaModule } from 'primeng/inputtextarea';
 import { GalleriaModule } from 'primeng/galleria';
 import { ParallaxModule, ParallaxConfig } from 'ngx-parallax';
 
@@ -43,6 +44,7 @@ import { ParallaxModule, ParallaxConfig } from 'ngx-parallax';
     CardModule,
     DropdownModule,
     InputTextModule,
+    InputTextareaModule,
     GalleriaModule,
     ParallaxModule
   ],

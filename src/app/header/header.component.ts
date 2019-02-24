@@ -14,9 +14,10 @@ export class HeaderComponent implements OnInit {
   public items: MenuItem[];
 
   constructor() { }
-
+  
   ngOnInit() {
     this.items = [
+      { label: 'Home', icon: '', routerLink: "/" },
       // { label: 'Blackstone', icon: '', routerLink: "blackstone" },
       { label: 'Princeton', icon: '', routerLink: "/princeton" },
       // { label: 'Rental Homes', icon: '', routerLink: "/homes" },

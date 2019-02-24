@@ -30,6 +30,13 @@ body, html {
     background-size: cover;
 }
 
+.amenities {
+    text-align: center;
+    padding: 5vh 0vw;
+    margin: 0vh 5vw;
+    border-bottom: 1.5px lightgray solid;
+}
+
 /* Turn off parallax scrolling for all tablets and phones. Increase/decrease the pixels if needed */
 /* @media only screen and (max-device-width: 1366px) {
     .parallax {
