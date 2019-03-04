@@ -8,6 +8,9 @@ import { Component, OnInit } from '@angular/core';
 export class PrincetonComponent implements OnInit {
 
   images: any[];
+  pWidth: Number;
+  pHeight: Number;
+  customStyle: Object;
 
   constructor() { }
 
@@ -31,7 +34,6 @@ export class PrincetonComponent implements OnInit {
       { source: 'assets/images/princeton/princeton-livingroom-1.jpg', alt: 'Princeton Hallway from bedroom', title: 'Princeton Hallway from bedroom' },
       { source: 'assets/images/princeton/princeton-livingroom-2.jpg', alt: 'Princeton Hallway from bedroom', title: 'Princeton Hallway from bedroom' },
       { source: 'assets/images/princeton/princeton-livingroom-3.jpg', alt: 'Princeton Hallway from bedroom', title: 'Princeton Hallway from bedroom' },
-
     ]
   }
 

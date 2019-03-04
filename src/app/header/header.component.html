@@ -1,8 +1,94 @@
-<div  class="navigation">
-  <a routerLink="/">
-    <img src="../../assets/images/LCA Logo-1.jpeg" alt="logo" height="90" width="360" class="lca-logo"/>
-  </a>
-  <p-tabMenu [model]="items" styleClass="navItem"></p-tabMenu>
-</div>
+<nav class="navigation navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a routerLink="/">
+      <img src="../../assets/images/LCA Logo-1.jpeg" alt="logo" class="lca-logo navbar-brand" />
+    </a>
+    <a role="button" #navBurger class="navbar-burger burger" aria-label="menu" aria-expanded="false"
+       data-target="navbarBasicExample" (click)="toggleMenu()">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+  <div id="navbarBasicExample" class="navbar-menu" #navMenu>
+    <div class="navbar-end" (click)="toggleMenu()">
+      <a class="navbar-item" routerLink="/">
+        Home
+      </a>
+      <a class="navbar-item" routerLink="/princeton">
+        Princeton
+      </a>
+      <a class="navbar-item" routerLink="/maintenance">
+        Maintenance
+      </a>
+      <a class="navbar-item" routerLink="/contacts">
+        Contact
+      </a>
+      <!-- <p-tabMenu [model]="items" styleClass="navItem"></p-tabMenu> -->
+    </div>
+  </div>
+</nav>
 
-<!-- change button type -->
+
+
+
+<!-- <nav class="navbar" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="https://bulma.io">
+        <img src="https://bulma.io/images/bulma-logo.png" width="112" height="28">
+      </a>
+  
+      <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+  
+    <div id="navbarBasicExample" class="navbar-menu">
+      <div class="navbar-start">
+        <a class="navbar-item">
+          Home
+        </a>
+  
+        <a class="navbar-item">
+          Documentation
+        </a>
+  
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link">
+            More
+          </a>
+  
+          <div class="navbar-dropdown">
+            <a class="navbar-item">
+              About
+            </a>
+            <a class="navbar-item">
+              Jobs
+            </a>
+            <a class="navbar-item">
+              Contact
+            </a>
+            <hr class="navbar-divider">
+            <a class="navbar-item">
+              Report an issue
+            </a>
+          </div>
+        </div>
+      </div>
+  
+      <div class="navbar-end">
+        <div class="navbar-item">
+          <div class="buttons">
+            <a class="button is-primary">
+              <strong>Sign up</strong>
+            </a>
+            <a class="button is-light">
+              Log in
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav> -->

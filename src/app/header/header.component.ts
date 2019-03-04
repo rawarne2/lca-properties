@@ -1,4 +1,4 @@
-import { Component, OnInit, ViewEncapsulation } from '@angular/core';
+import { Component, OnInit, ViewEncapsulation, ViewChild, ElementRef } from '@angular/core';
 import { TabMenuModule } from 'primeng/tabmenu';
 import { MenuItem } from 'primeng/api';
 
@@ -12,6 +12,9 @@ export class HeaderComponent implements OnInit {
 
   title = 'LCA Apartments';
   public items: MenuItem[];
+  // public classes: String;
+  @ViewChild('navBurger') navBurger: ElementRef;
+  @ViewChild('navMenu') navMenu: ElementRef;
 
   constructor() { }
   
@@ -24,6 +27,14 @@ export class HeaderComponent implements OnInit {
       { label: 'Maintenance', icon: '', routerLink: "/maintenance" },
       { label: 'Contact', icon: '', routerLink: "/contacts" }
     ];
+    // this.classes = document.getElementsByClassName("is-active")[0].className;
+  }
+  toggleMenu() {
+      this.navBurger.nativeElement.classList.toggle('is-active');
+      this.navMenu.nativeElement.classList.toggle('is-active');
   }
 
+  clickedBurgerNav() {
+    this.navMenu.nativeElement.classList.toggle('is-active');
+  }
 }
