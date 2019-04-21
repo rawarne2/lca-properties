@@ -1,6 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
@@ -19,11 +18,11 @@ import { InputTextModule } from 'primeng/inputtext';
 import { InputTextareaModule } from 'primeng/inputtextarea';
 import { GalleriaModule } from 'primeng/galleria';
 import { ParallaxModule, ParallaxConfig } from 'ngx-parallax';
+import { FormsModule }   from '@angular/forms';
+import { ButtonModule } from 'primeng/button';
+import { ReactiveFormsModule } from '@angular/forms';
 
-
-
-
-
+// declare const require: any;
 
 @NgModule({
   declarations: [
@@ -46,7 +45,10 @@ import { ParallaxModule, ParallaxConfig } from 'ngx-parallax';
     InputTextModule,
     InputTextareaModule,
     GalleriaModule,
-    ParallaxModule
+    ParallaxModule,
+    FormsModule,
+    ButtonModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent],

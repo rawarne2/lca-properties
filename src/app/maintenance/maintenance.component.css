@@ -1,17 +1,8 @@
-.form .ui-card-body {
-    display: flex;
-    justify-content: center;
-    background: lightgray;
-}
-
 .ui-inputtext {
-    width: 80%;
+    width: 70%;
     margin: .1vw 2vw;
-    width: 90%;
 }
 
-
-/* .form .ui-card-content :first-child { */
-    /* width: 60%; */
-    /* margin: .1vw 1vw; */
-/* } */
+.submit-button {
+    margin: 1em;
+}

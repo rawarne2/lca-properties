@@ -1,5 +1,12 @@
-.content-body {
-    margin: 5vw;
-    padding: 5vw;
-    background-color: white;
+.ui-card-content {
+    padding: 50px;
+}
+
+.contact {
+    padding: 2em;
+}
+
+.man, .woman {
+    width: 15em;
+    height: 15em;
 }

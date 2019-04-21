@@ -1,11 +1,6 @@
-/* body, html {
-    height: 100%;
-} */
-  
 .parallax1 {
 
-    background-image: 
-        url("../../assets/images/chicago-skyline.jpeg");
+    background-image: url("../../assets/images/chicago-skyline_3.jpg");
     
     /* Full height */
     height: 75vh; 
@@ -14,7 +9,8 @@
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: auto;
+    margin: 5vh 0vw;
 }
 .parallax2 {
 
@@ -27,7 +23,8 @@
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: auto;
+    margin: 5vh 0vw;
 }
 
 .amenities {
@@ -37,6 +34,11 @@
     border-bottom: 1.5px lightgray solid;
 }
 
+.row-item {
+    /* align-items: center; */
+    /* padding: 1vw; */
+
+}
 /* Turn off parallax scrolling for all tablets and phones. Increase/decrease the pixels if needed */
 /* @media only screen and (max-device-width: 1366px) {
     .parallax {

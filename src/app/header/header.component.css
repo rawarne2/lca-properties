@@ -25,19 +25,20 @@
     color: white;
 }
 
-@media screen and (max-width: 500px) {
-    .lca-logo {
-        height: 2em;
-        width: 10em;
-    }
+@media screen and (max-width: 800px) {
     .navbar-item {
         color: black;
         font-size: 1em;
     }
 }
+
+@media screen and (max-width: 500px) {
+    .lca-logo {
+        height: 2em;
+        width: 10em;
+    }
+}
+
     /* 
-    - make the nav buttons wrap around title for 
-      small screens 
     - make styles for min (and medium?) size screens
-    - bring all the way to the top
     */

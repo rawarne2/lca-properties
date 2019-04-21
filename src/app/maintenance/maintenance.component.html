@@ -1,26 +1,31 @@
 <p-card>
-<p-header>Mainenance Request</p-header>
-<h3>Please fill out the form below to submit a maintenance 
-    request and we will try to respond to your issue within 48 hours.
-</h3>
-<p-card styleClass="form">
-    <!-- <p-dropdown
-        [options]="properties"
-        [(ngModel)]="selectedProperty"
-        (onChange)="submitProperty($event.value.name)">
-    </p-dropdown> -->
-    <input #firstName type="text" pInputText placeholder="First Name" (blur)="submitProperty(firstName.value)"/>
-    <input #lastNAme type="text" pInputText placeholder="Last Name"/>
-    <input #phoneNumner type="text" pInputText placeholder="Phone Number"/>
-    <!-- <input #altphoneNumner type="text" pInputText placeholder="Alternate Phone Number"/> -->
-    <input #emailAdress type="text" pInputText placeholder="Email Address"/>
-    <!-- <input #confirmEmail type="text" pInputText placeholder="Confirm Email Address"/> -->
-    <input #aptNumber type="text" pInputText placeholder="Apartment Number"/>
-    <input #maintenanceLocation type="text" pInputText placeholder="Mainenance Location"/>
-    <textarea #details type="text" pInputTextarea placeholder="Details"></textarea>
-
-    <!-- <button>submit</button> make it submit the entire form -->
-</p-card>
+    <h1>Maintenance Form</h1>
+    <h3>Please fill out this form to submit a maintenance request and we will respond to your issue as soon as possible.
+    </h3>
+    <form [formGroup]="maintenanceForm">
+        <div class="field">
+            <input formControlName="firstName"firstName type="text" pInputText placeholder="First Name" class="input" />
+        </div>
+        <div class="field">
+            <input formControlName="lastName" type="text" pInputText placeholder="Last Name" class="input" />
+        </div>
+        <div class="field">
+            <input formControlName="phoneNumber" type="text" pInputText placeholder="Phone Number" class="input" />
+        </div>
+        <div class="field">
+            <input formControlName="emailAddress" type="text" pInputText placeholder="Email Address" class="input" />
+        </div>
+        <div class="field">
+            <input formControlName="aptNumber" type="text" pInputText placeholder="Apartment Number" class="input" />
+        </div>
+        <div class="field">
+            <input formControlName="maintenanceLocation" type="text" pInputText placeholder="Maintenance Location" class="input" />
+        </div>
+        <div class="field">
+            <textarea formControlName="details" type="text" pInputTextarea placeholder="Details" class="input"></textarea>
+        </div>
+    </form>
+    <p-button type="submit" label="Submit" (onClick)="processForm()" class="submit-button"></p-button>
 </p-card>
 
 

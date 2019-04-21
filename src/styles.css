@@ -3,7 +3,7 @@
 @import '../node_modules/primeng/resources/themes/nova-dark/theme.css';
 @import '../node_modules/primeng/resources/primeng.min.css';
 
-html, body, h1 {
+html, body {
     padding: 0px;
     margin: 0px;
     background-color: rgb(218, 209, 209);
