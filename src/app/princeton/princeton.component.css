@@ -5,12 +5,13 @@
     border-bottom: 1.5px lightgray solid;
 }
 
-/* .ui-galleria .ui-widget .ui-widget-content .ui-corner-all {
-    justify-content: center;
-} */
-
 .gallery {
     display: grid;
     justify-content: center;
     padding: 5vh 0vw;
 }
+
+/* .ui-galleria {
+    position: relative;
+    width: 100%;
+} */

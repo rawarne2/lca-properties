@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-princeton',
@@ -8,9 +8,6 @@ import { Component, OnInit } from '@angular/core';
 export class PrincetonComponent implements OnInit {
 
   images: any[];
-  pWidth: Number;
-  pHeight: Number;
-  customStyle: Object;
 
   constructor() { }
 

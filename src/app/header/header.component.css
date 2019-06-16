@@ -5,7 +5,7 @@
     right: 0;
     background-color: rgb(65, 65, 107);
     padding: 0vw 2vw;
-    z-index: 2;
+    z-index: 999;
 }
 
 .lca-logo {
