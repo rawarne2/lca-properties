@@ -21,6 +21,7 @@ import { ParallaxModule, ParallaxConfig } from 'ngx-parallax';
 import { FormsModule }   from '@angular/forms';
 import { ButtonModule } from 'primeng/button';
 import { ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule }    from '@angular/common/http';
 
 // declare const require: any;
 
@@ -48,7 +49,8 @@ import { ReactiveFormsModule } from '@angular/forms';
     ParallaxModule,
     FormsModule,
     ButtonModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

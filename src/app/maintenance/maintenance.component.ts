@@ -1,11 +1,17 @@
-import {Component, OnInit, ViewEncapsulation} from '@angular/core';
-import {SelectItem} from 'primeng/api';
+import { Component, OnInit, ViewEncapsulation } from '@angular/core';
+import { SelectItem } from 'primeng/api';
 import { FormControl, FormGroup } from '@angular/forms';
+import { EmailService } from '../emailService.service';
 // const nodemailer = require('nodemailer');
 // import nodemailer from 'nodemailer';
 import * as nodemailer from 'nodemailer';
 
-@Component({selector: 'app-maintenance', templateUrl: './maintenance.component.html', styleUrls: ['./maintenance.component.css'], encapsulation: ViewEncapsulation.None})
+@Component({
+  selector: 'app-maintenance',
+  templateUrl: './maintenance.component.html',
+  styleUrls: ['./maintenance.component.css'],
+  encapsulation: ViewEncapsulation.None
+})
 
 export class MaintenanceComponent implements OnInit {
 
@@ -20,8 +26,8 @@ export class MaintenanceComponent implements OnInit {
     details: new FormControl('')
   })
   val = this.maintenanceForm.value;
-  
-  constructor() {
+
+  constructor(private emailService: EmailService) {
     // this.properties = [   { label: 'Select Property', value: null },   { label:
     // 'Rental Homes', value: { id: 1, name: 'Rental Homes' }},   { label:
     // 'Blacstone', value: { id: 1, name: 'Blacstone' }},   { label: 'Princeton',
@@ -32,20 +38,17 @@ export class MaintenanceComponent implements OnInit {
   ngOnInit() {
   }
 
-  submitForm() {
-    console.log('submitted');
-  }
-
   processForm() {
     const allInfo = `
     Name: ${this.maintenanceForm.value.firstName} ${this.maintenanceForm.value.lastName}
     Phone Number: ${this.maintenanceForm.value.phoneNumber}
     Email Address: ${this.maintenanceForm.value.emailAddress}
     Apartment Number: ${this.maintenanceForm.value.aptNumber}
-    Maintenan: ${this.maintenanceForm.value.maintenanceLocation}
+    Maintenance: ${this.maintenanceForm.value.maintenanceLocation}
     Details: ${this.maintenanceForm.value.details}
     `;
-    alert(allInfo);
+    this.emailService.sendMaintenanceRequest(allInfo);
+    alert('Your maintenance request has been submitted!');
   }
-  
+
 }
