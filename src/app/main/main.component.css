@@ -45,3 +45,12 @@
       background-attachment: scroll;
     }
   } */
+
+  .vision-container {
+      display: grid;
+      justify-items: center;
+  }
+
+  .vision {
+      width: 70%;
+  }

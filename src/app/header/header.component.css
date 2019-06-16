@@ -25,14 +25,18 @@
     color: white;
 }
 
-@media screen and (max-width: 800px) {
+.currentTabStyle {
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 768px) {
     .navbar-item {
         color: black;
         font-size: 1em;
     }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 576px) {
     .lca-logo {
         height: 2em;
         width: 10em;

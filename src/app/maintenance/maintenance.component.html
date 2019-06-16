@@ -1,7 +1,10 @@
 <p-card>
-    <h1>Maintenance Form</h1>
-    <h3>Please fill out this form to submit a maintenance request and we will respond to your issue as soon as possible.
-    </h3>
+    <div class="maintenance-container">
+        <h1>Maintenance Form</h1>
+        <h3 class="maintenance-header">
+            Please fill out this form to submit a maintenance request and we will respond to your issue as soon as possible.
+        </h3>
+    </div>
     <form [formGroup]="maintenanceForm">
         <div class="field">
             <input formControlName="firstName"firstName type="text" pInputText placeholder="First Name" class="input" />

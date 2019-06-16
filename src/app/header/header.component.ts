@@ -1,6 +1,7 @@
-import { Component, OnInit, ViewEncapsulation, ViewChild, ElementRef } from '@angular/core';
+import { Component, OnInit, ViewEncapsulation, ViewChild, ElementRef, Input } from '@angular/core';
 import { TabMenuModule } from 'primeng/tabmenu';
 import { MenuItem } from 'primeng/api';
+import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
   selector: 'app-header',
@@ -16,18 +17,10 @@ export class HeaderComponent implements OnInit {
   @ViewChild('navBurger') navBurger: ElementRef;
   @ViewChild('navMenu') navMenu: ElementRef;
 
-  constructor() { }
+  constructor(private router: Router) { }
   
   ngOnInit() {
-    this.items = [
-      { label: 'Home', icon: '', routerLink: "/" },
-      // { label: 'Blackstone', icon: '', routerLink: "blackstone" },
-      { label: 'Princeton', icon: '', routerLink: "/princeton" },
-      // { label: 'Rental Homes', icon: '', routerLink: "/homes" },
-      { label: 'Maintenance', icon: '', routerLink: "/maintenance" },
-      { label: 'Contact', icon: '', routerLink: "/contacts" }
-    ];
-    // this.classes = document.getElementsByClassName("is-active")[0].className;
+
   }
   toggleMenu() {
       this.navBurger.nativeElement.classList.toggle('is-active');
@@ -36,5 +29,9 @@ export class HeaderComponent implements OnInit {
 
   clickedBurgerNav() {
     this.navMenu.nativeElement.classList.toggle('is-active');
+  }
+
+  currentTab(tab) {
+    return this.router.url.toString() === tab
   }
 }

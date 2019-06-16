@@ -10,7 +10,7 @@
 } */
 
 .gallery {
-    display: flex;
+    display: grid;
     justify-content: center;
-    padding: 3vh 0vw;
+    padding: 5vh 0vw;
 }

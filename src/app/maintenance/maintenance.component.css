@@ -1,8 +1,17 @@
 .ui-inputtext {
     width: 70%;
-    margin: .1vw 2vw;
 }
 
 .submit-button {
     margin: 1em;
+}
+
+.maintenance-header {
+    width: 70%;
+    padding: 5vh 0vh;
+}
+
+.maintenance-container {
+    display: grid;
+    justify-items: center;
 }
