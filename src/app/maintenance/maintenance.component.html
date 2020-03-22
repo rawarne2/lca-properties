@@ -18,11 +18,20 @@
         <div class="field">
             <input formControlName="emailAddress" type="text" pInputText placeholder="Email Address" class="input" />
         </div>
-        <div class="field">
-            <input formControlName="aptNumber" type="text" pInputText placeholder="Apartment Number" class="input" />
+        <div class="select">
+            <select class="select-box">
+                <option class="option" value="" disabled selected>Select Apartment</option>
+                <option class="option" value="7255 S. Princeton apt 1">7255 S. Princeton apt 1</option>
+                <option class="option" value="7255 S. Princeton apt 2">7255 S. Princeton apt 2</option>
+                <option class="option" value="7255 S. Princeton apt 3">7255 S. Princeton apt 3</option>
+                <option class="option" value="7257 S. Princeton apt 1">7257 S. Princeton apt 1</option>
+                <option class="option" value="7257 S. Princeton apt 2">7257 S. Princeton apt 2</option>
+                <option class="option" value="7257 S. Princeton apt 3">7257 S. Princeton apt 3</option>
+                <option>Other</option>
+            </select>
         </div>
         <div class="field">
-            <input formControlName="maintenanceLocation" type="text" pInputText placeholder="Maintenance Location" class="input" />
+            <input formControlName="maintenanceLocation" type="text" pInputText placeholder="Maintenance Needed" class="input" />
         </div>
         <div class="field">
             <textarea formControlName="details" type="text" pInputTextarea placeholder="Details" class="input"></textarea>
