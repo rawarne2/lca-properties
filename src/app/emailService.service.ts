@@ -3,13 +3,6 @@ import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { catchError, map, tap } from 'rxjs/operators';
 
-// addHero (hero: Hero): Observable<Hero> {
-//     return this.http.post<Hero>(this.heroesUrl, hero, httpOptions)
-//       .pipe(
-//         catchError(this.handleError('addHero', hero))
-//       );
-//   }
-
 const httpOptions = {
     headers: new HttpHeaders({ 'Content-Type': 'text/plain;charset=UTF-8' })
 };
@@ -19,11 +12,12 @@ const httpOptions = {
 })
 export class EmailService {
 
-    private emailUrl = 'http://localhost:8080/send-mail';  // URL to web api
-
+    // private emailUrl = 'http://localhost:3000/send-mail';  // URL to web api
+    private emailUrl = 'https://lca-email.herokuapp.com/'
     constructor(private http: HttpClient) { }
 
-    sendMaintenanceRequest(message: String): void {
-        this.http.post<String>(this.emailUrl, message, httpOptions).subscribe(email => email)
+    sendMaintenanceRequest(message: Object): void {
+        this.http.post<String>(this.emailUrl, message).subscribe(email => email)
+        console.log('email sent', message)
     }
 }

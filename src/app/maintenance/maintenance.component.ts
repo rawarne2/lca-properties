@@ -39,14 +39,14 @@ export class MaintenanceComponent implements OnInit {
   }
 
   processForm() {
-    const allInfo = `
-    Name: ${this.maintenanceForm.value.firstName} ${this.maintenanceForm.value.lastName}
-    Phone Number: ${this.maintenanceForm.value.phoneNumber}
-    Email Address: ${this.maintenanceForm.value.emailAddress}
-    Apartment Number: ${this.maintenanceForm.value.aptNumber}
-    Maintenance: ${this.maintenanceForm.value.maintenanceLocation}
-    Details: ${this.maintenanceForm.value.details}
-    `;
+    const name = `${this.maintenanceForm.value.firstName} ${this.maintenanceForm.value.lastName}`
+    const phoneNumber = `${this.maintenanceForm.value.phoneNumber}`
+    const emailAddress = `${this.maintenanceForm.value.emailAddress}`
+    const aptNumber = `${this.maintenanceForm.value.aptNumber}`
+    const maintenance = `${this.maintenanceForm.value.maintenanceLocation}`
+    const details = `${this.maintenanceForm.value.details}`
+    
+    const allInfo = {name, phoneNumber, emailAddress, aptNumber, maintenance, details}
     this.emailService.sendMaintenanceRequest(allInfo);
     alert('Your maintenance request has been submitted!');
   }
