@@ -13,7 +13,7 @@ const httpOptions = {
 export class EmailService {
 
     // private emailUrl = 'http://localhost:3000/send-mail';  // URL to web api
-    private emailUrl = 'https://lca-email.herokuapp.com/'
+    private emailUrl = 'https://lca-email.herokuapp.com/send-mail'
     constructor(private http: HttpClient) { }
 
     sendMaintenanceRequest(message: Object): void {
