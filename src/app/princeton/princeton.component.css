@@ -44,7 +44,7 @@
 }
 
 .princeton-header {
-    margin-bottom: 12vh;
+    margin-bottom: 8vh;
 }
 
 .p-grid {
@@ -54,5 +54,12 @@
 @media screen and (max-width: 400px) {
     .ui-card-body {
         padding: 0px;
+    }
+    
+    .last-amenity {
+        align-self: flex-start;
+    }
+    .p-grid {
+        justify-content: flex-start;
     }
 }
