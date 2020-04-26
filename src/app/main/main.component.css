@@ -78,3 +78,9 @@
   .first-availability {
     border-bottom: 1.5px lightgray solid
   }
+
+  @media screen and (max-width: 400px) {
+    .highways {
+        width: 100%;
+    }
+  }
