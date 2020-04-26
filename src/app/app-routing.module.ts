@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 // import { HomesComponent } from './homes/homes.component';
-import { PrincetonComponent } from './princeton/prinection.component';
+import { PrincetonComponent } from './princeton/princeton.component';
 // import { BlackstoneComponent } from './blackstone/blackstone.component';
 import { ContactComponent } from './contact/contact.component';
 import { MainComponent } from './main/main.component';

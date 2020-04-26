@@ -3,7 +3,7 @@ import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
-import { PrincetonComponent } from './princeton/prinection.component';
+import { PrincetonComponent } from './princeton/princeton.component';
 import { BlackstoneComponent } from './blackstone/blackstone.component';
 import { HomesComponent } from './homes/homes.component';
 import { ContactComponent } from './contact/contact.component';

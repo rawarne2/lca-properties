@@ -1,9 +1,9 @@
 <p-card>
-  <h1>Living at Princeton Apartments</h1>
-  <div class="gallery">
-    <p-galleria [images]="images" [showCaption]="true"></p-galleria>
-  </div>
-  <div class="p-grid p-justify-center p-align-center features">
+  <h1  class="princeton-header">Living at Princeton Apartments</h1>
+  <!-- <div class="gallery"> -->
+    <p-galleria [images]="images" [showCaption]="true" [autoPlay]="false" interval="5" panelWidth="auto" [showCaption]="true"></p-galleria>
+  <!-- </div> -->
+  <div class="p-grid p-justify-center p-align-center features first">
     <div class="p-col-4">
       <h3>Amenities</h3>
     </div>
@@ -28,7 +28,7 @@
     <div class="p-col-8">
       <div class="p-grid">
         <div class="p-col-6">Spacious living room area</div>
-        <div class="p-col-6">Beautiful artificial fireplace with side shelves</div>
+        <div class="p-col-6">Beautiful artificial fireplace<br />with side shelves</div>
         <div class="p-col-6">Balcony</div>
       </div>
     </div>

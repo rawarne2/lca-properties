@@ -1,37 +1,57 @@
 .parallax1 {
-
     background-image: url("../../assets/images/chicago-skyline_3.jpg");
-    
-    /* Full height */
-    height: 75vh; 
-  
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
+    height: 60vh;
     background-repeat: no-repeat;
     background-size: auto;
-    margin: 5vh 0vw;
+    margin: 4vh 0vw;
 }
-.parallax2 {
 
+.parallax2 {
     background-image: url("../../assets/images/princeton/princeton-google-maps-view.jpeg");
-    
-    /* Full height */
-    height: 75vh; 
-  
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
+    height: 60vh;
     background-position: center;
     background-repeat: no-repeat;
     background-size: auto;
-    margin: 5vh 0vw;
+    margin: 4vh 0vw;
+}
+
+@media screen and (min-width: 768px) {
+    .parallax1 {
+
+        background-image: url("../../assets/images/chicago-skyline_3.jpg");
+        
+        /* Full height */
+        height: 75vh; 
+    
+        /* Create the parallax scrolling effect */
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: auto;
+        margin: 4vh 0vw;
+    }
+    .parallax2 {
+
+        background-image: url("../../assets/images/princeton/princeton-google-maps-view.jpeg");
+        
+        /* Full height */
+        height: 75vh; 
+    
+        /* Create the parallax scrolling effect */
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: auto;
+        margin: 4vh 0vw;
+    }
 }
 
 .amenities {
     text-align: center;
-    padding: 5vh 0vw;
-    margin: 0vh 5vw;
+    padding: 4vh 0vw;
+    margin: 0vh 4vw;
     border-bottom: 1.5px lightgray solid;
+    /* justify-content: space-around; */
 }
 
 .row-item {
@@ -52,5 +72,9 @@
   }
 
   .vision {
-      width: 70%;
+      width: 75%;
+  }
+
+  .first-availability {
+    border-bottom: 1.5px lightgray solid
   }

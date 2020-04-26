@@ -1,9 +1,11 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, ViewEncapsulation } from '@angular/core';
+// import { GalleriaModule } from 'primeng/galleria';
 
 @Component({
   selector: 'app-princeton',
   templateUrl: './princeton.component.html',
-  styleUrls: ['./princeton.component.css']
+  styleUrls: ['./princeton.component.css'],
+  encapsulation: ViewEncapsulation.None
 })
 export class PrincetonComponent implements OnInit {
 

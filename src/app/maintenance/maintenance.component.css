@@ -5,6 +5,7 @@
 .select {
     width: 70%;
     margin-bottom: .75rem;
+    border: 1px solid #a6a6a6;
 }
 
 .select-box {
@@ -27,4 +28,16 @@
 .maintenance-container {
     display: grid;
     justify-items: center;
+}
+
+@media screen and (max-width: 576px) {
+    .ui-inputtext {
+        width: 80%;
+    }
+    .option {
+        width: 80%;
+    }
+    .select {
+        width: 80%;
+    }
 }

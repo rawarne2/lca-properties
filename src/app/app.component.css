@@ -22,12 +22,19 @@ h3 {
 
 @media screen and (max-width: 768px) {
     .ui-card {
-        margin: 10vh 3vw 2vh 3vw;
+        margin: 10vh 2vw 2vh 3vw;
     }
 }
 
 @media screen and (max-width: 576px) {
     .ui-card {
         margin: 10vh 2vw 2vh 2vw;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .p-grid {
+        align-items: center;
+        justify-content: center;
     }
 }

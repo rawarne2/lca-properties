@@ -1,7 +1,3 @@
-.ui-card-content {
-    padding: 50px;
-}
-
 .contact {
     padding: 2em;
 }
@@ -9,4 +5,8 @@
 .man, .woman {
     width: 15em;
     height: 15em;
+}
+
+h3 {
+    padding: 4vh 0vw;
 }
