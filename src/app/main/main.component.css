@@ -79,7 +79,7 @@
     border-bottom: 1.5px lightgray solid
   }
 
-  @media screen and (max-width: 400px) {
+  @media screen and (max-width: 458px) {
     .highways {
         width: 100%;
     }

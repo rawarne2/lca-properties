@@ -33,7 +33,7 @@ h3 {
     }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 458px) {
     .p-grid {
         align-items: center;
         justify-content: center;
