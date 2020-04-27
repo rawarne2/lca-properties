@@ -30,7 +30,7 @@
     width: 100%;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
     .ui-galleria-panel-wrapper {
         height: 30vh !important;
     }
@@ -61,5 +61,11 @@
     }
     .p-grid {
         justify-content: flex-start;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .princeton-title {
+        font-size: 17px;
     }
 }

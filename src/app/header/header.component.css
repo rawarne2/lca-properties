@@ -29,7 +29,7 @@
     text-decoration: underline;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
     .navbar-item {
         color: black;
         font-size: 1em;
@@ -42,7 +42,3 @@
         width: 10em;
     }
 }
-
-    /* 
-    - make styles for min (and medium?) size screens
-    */

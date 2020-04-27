@@ -15,7 +15,7 @@
     margin: 4vh 0vw;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1100px) {
     .parallax1 {
 
         background-image: url("../../assets/images/chicago-skyline_3.jpg");
@@ -51,20 +51,7 @@
     padding: 4vh 0vw;
     margin: 0vh 4vw;
     border-bottom: 1.5px lightgray solid;
-    /* justify-content: space-around; */
 }
-
-.row-item {
-    /* align-items: center; */
-    /* padding: 1vw; */
-
-}
-/* Turn off parallax scrolling for all tablets and phones. Increase/decrease the pixels if needed */
-/* @media only screen and (max-device-width: 1366px) {
-    .parallax {
-      background-attachment: scroll;
-    }
-  } */
 
   .vision-container {
       display: grid;
@@ -75,12 +62,25 @@
       width: 75%;
   }
 
-  .first-availability {
-    border-bottom: 1.5px lightgray solid
+  @media screen and (max-width: 458px) {
+    .first-availability {
+        border-bottom: 1.5px lightgray solid
+      }
+    .availability {
+        width: 100%;
+    }
   }
-
   @media screen and (max-width: 458px) {
     .highways {
         width: 100%;
     }
   }
+
+  @media screen and (min-width: 768px) and (max-width: 1100px) {
+    .parallax1 {
+        height: 40vh;
+    }
+    .parallax2 {
+        height: 50vh;
+    }
+}
