@@ -1,5 +1,4 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
-// import { GalleriaModule } from 'primeng/galleria';
 
 @Component({
   selector: 'app-princeton',
