@@ -66,7 +66,7 @@
 
   @media screen and (max-width: 458px) {
     .first-availability {
-        border-bottom: 1.5px lightgray solid
+        padding-bottom: 24px;
       }
     .availability {
         width: 100%;

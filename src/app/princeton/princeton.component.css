@@ -64,6 +64,9 @@
     .last-amenity {
         align-self: flex-start;
     }
+    .ui-card.ui-widget.ui-widget-content.ui-corner-all {
+        display: inline-block;
+    }
     .p-grid {
         justify-content: flex-start;
     }
