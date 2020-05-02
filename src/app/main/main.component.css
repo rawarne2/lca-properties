@@ -92,3 +92,9 @@
         height: 50vh;
     }
 }
+
+@media screen and (min-width: 786px) and (max-width: 950px) and (orientation: landscape) {
+    .parallax1 {
+        height: 80vh;
+    }
+}
